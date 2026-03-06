@@ -1,5 +1,8 @@
 command: [
-  "streamlit", 
+  "streamlit",
   "run",
   "app.py"
 ]
+env:
+  - name: SERVING_ENDPOINT_NAME
+    value: <your-serving-endpoint-name>

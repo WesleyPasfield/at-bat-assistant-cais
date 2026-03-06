@@ -8,7 +8,13 @@ import uuid
 from databricks.sdk import WorkspaceClient
 from mlflow.deployments import get_deploy_client
 
-SERVING_ENDPOINT_NAME = os.getenv("SERVING_ENDPOINT_NAME", "agents_atbat_assistant")
+# Derive endpoint name from UC model name: catalog.schema.model -> agents_catalog-schema-model
+_UC_MODEL_NAME = os.getenv("UC_MODEL_NAME", "")
+if _UC_MODEL_NAME:
+    _default_endpoint = f"agents_{_UC_MODEL_NAME.replace('.', '-')}"
+else:
+    _default_endpoint = "agents_atbat_assistant"
+SERVING_ENDPOINT_NAME = os.getenv("SERVING_ENDPOINT_NAME", _default_endpoint)
 
 
 # Example prompts used to randomize the chat placeholder hint
