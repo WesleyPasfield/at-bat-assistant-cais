@@ -65,7 +65,7 @@ The agent is an MLflow ResponsesAgent backed by a LangGraph state machine.
 ## Repository Structure
 
 ```
-existing_baseball_example/              # Core pipeline notebooks (run in order)
+notebooks/                              # Core pipeline notebooks (run in order)
   00_setup.ipynb
   01_collect_data_and_upload_to_databricks.ipynb
   01b_collect_incremental_data.ipynb
@@ -78,7 +78,7 @@ existing_baseball_example/              # Core pipeline notebooks (run in order)
   08_create_agent_with_skills.ipynb
   09-Evaluation.ipynb
 
-atbat-assistant/                        # Streamlit chat app (deployed as Databricks App)
+app/                                    # Streamlit chat app (deployed as Databricks App)
   atbat-assistant/
     app.py
     app.yaml

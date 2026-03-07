@@ -6,3 +6,5 @@ command: [
 env:
   - name: SERVING_ENDPOINT_NAME
     value: <your-serving-endpoint-name>
+  - name: MLFLOW_EXPERIMENT_NAME
+    value: <your-mlflow-experiment-path>

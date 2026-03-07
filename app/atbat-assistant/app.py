@@ -7,6 +7,18 @@ import random
 import uuid
 from databricks.sdk import WorkspaceClient
 from mlflow.deployments import get_deploy_client
+import mlflow
+
+# ---------------------------------------------------------------------------
+# MLflow experiment – send traces to the same experiment used by the notebooks.
+# Set MLFLOW_EXPERIMENT_NAME env var in app.yaml, or fall back to the default
+# experiment path from 00_setup.ipynb.
+# ---------------------------------------------------------------------------
+_w_init = WorkspaceClient()
+_default_experiment = f"/Users/{_w_init.current_user.me().user_name}/atbat-assistant-memalign"
+mlflow.set_experiment(os.getenv("MLFLOW_EXPERIMENT_NAME", _default_experiment))
+mlflow.set_registry_uri("databricks-uc")
+mlflow.tracing.enable()
 
 # Derive endpoint name from UC model name: catalog.schema.model -> agents_catalog-schema-model
 _UC_MODEL_NAME = os.getenv("UC_MODEL_NAME", "")
