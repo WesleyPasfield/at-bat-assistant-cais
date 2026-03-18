@@ -1,3 +1,11 @@
+---
+name: skill-generation
+description: >
+  Use this skill when generating or optimizing agent skills using optimize_anything. Triggered by
+  questions about skill file structure, constructing an evaluator for skill generation, runtime skill
+  loading, or storing skills in UC Volumes or Lakebase.
+---
+
 # Skill Generation Pattern with optimize_anything
 
 ## Core Principle

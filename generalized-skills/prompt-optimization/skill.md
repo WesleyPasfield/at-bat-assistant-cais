@@ -1,3 +1,11 @@
+---
+name: prompt-optimization
+description: >
+  Use this skill when optimizing an agent's system prompt using GEPA. Triggered by questions about
+  building an optimization dataset, running GEPA, selecting the best prompt, or registering a prompt
+  to the MLflow Prompt Registry.
+---
+
 # Prompt Optimization Pattern with GEPA
 
 ## Core Principle

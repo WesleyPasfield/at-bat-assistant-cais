@@ -1,3 +1,11 @@
+---
+name: uc-function-design
+description: >
+  Use this skill when designing Unity Catalog functions to be exposed as deterministic agent tools via MCP.
+  Triggered by questions about UC function naming, COMMENT annotations, parameter design, tool chaining,
+  the 64-character name limit, or testing functions before agent integration.
+---
+
 # UC Function Design Pattern for Deterministic Agent Tools
 
 ## Core Principle

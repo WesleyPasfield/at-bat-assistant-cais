@@ -1,3 +1,11 @@
+---
+name: evaluation-and-alignment
+description: >
+  Use this skill when designing an evaluation framework, building a judge, labeling agent traces, or
+  aligning a judge to expert feedback with MemAlign. Triggered by questions about MLflow evaluation,
+  judge rubrics, Review App labeling, or the 80/20 rubric alignment pattern.
+---
+
 # Evaluation and Judge Alignment Pattern
 
 ## Core Principle: The 80/20 Rubric

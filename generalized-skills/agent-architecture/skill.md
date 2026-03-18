@@ -1,3 +1,11 @@
+---
+name: agent-architecture
+description: >
+  Use this skill when designing or implementing a compound AI agent on Databricks with MLflow.
+  Triggered by questions about agent routing, UC-first tool selection, Genie fallback, parallel MCP execution,
+  Lakebase conversation memory, or LangGraph state machine architecture.
+---
+
 # Agent Architecture Pattern: UC-First Routing with Genie Fallback
 
 ## Core Principle
